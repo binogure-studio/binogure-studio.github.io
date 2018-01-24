@@ -1,0 +1,43 @@
+<div class="content-col-wrapper">
+  <center>
+    <div id="games" class="anchor-menu"></div>
+    <h1>Our games</h1>
+    <table>
+    {% assign counter = 0 %}
+    {% for game in site.data.games %}
+      {% assign is_new_line = counter | mod: 3 %}
+
+      {% if forloop.first == true %}
+        <tr>
+      {% elsif is_new_line == 0 %}
+        </tr><tr>
+      {% endif %}
+
+      <td>
+        <div class="game-container">
+          {% if game.link %}
+            <a href="{{ game.link }}">
+          {% endif %}
+          <img src="{{ game.image }}" alt="{{ game.name }}" class="game-image">
+          <div class="game-overlay">
+              <div class="game-text">
+                <h1>{{ game.name }}</h1>
+                <h3>{{ game.description[site.active_lang] }}</h3>
+                <h2>{{ game.available[site.active_lang] }}</h2>
+              </div>
+          </div>
+          {% if game.link %}
+            </a>
+          {% endif %}
+        </div>
+      </td>
+
+      {% if forloop.last == true %}
+        </tr>
+      {% endif %}
+
+      {% assign counter = counter | plus: 1 %}
+    {% endfor %}
+    </table>
+  </center>
+</div>

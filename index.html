@@ -1,10 +1,44 @@
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=http://binogure-studio.com/city-game-studio-website/" />
-  </head>
-  <body>
-    <p>
-      <a href="http://binogure-studio.com/city-game-studio-website/">Redirect</a>
-    </p>
-  </body>
-</html>
+---
+layout: default
+title: Binogure Studio
+slides:
+  - sentence:
+      en: Create and publish awesome games
+      fr: Créez des publiez des jeux exceptionnels
+    game: City Game Studio
+    link: http://store.steampowered.com/app/726840/City_Game_Studio
+    captcha:
+      en: Soon on Steam
+      fr: Bientôt sur Steam
+    image: /images/slider/slide-0.png
+  - sentence:
+      en: A magnificient mix between Two Dots and Zuma Deluxe
+      fr: Le mélange parfait entre Zuma deluxe et Two Dots
+    game: Sneak In
+    captcha:
+      en: Available soon ...
+      fr: Disponible bientôt ...
+    image: /images/slider/slide-1.png
+  - sentence:
+      en: Conquer the city and buy back your opponents
+      fr: Contrôlez la ville et rachetez vos concurrents
+    game: City Game Studio
+    link: http://store.steampowered.com/app/726840/City_Game_Studio
+    captcha:
+      en: Soon on Steam
+      fr: Bientôt sur Steam
+    image: /images/slider/slide-2.png
+  - sentence:
+      en: More than 200 amazing levels
+      fr: Une quantité phénoménale de niveaux !
+    game: Sneak In
+    captcha:
+      en: Available soon ...
+      fr: Disponible bientôt ...
+    image: /images/slider/slide-3.png
+---
+
+
+{% for member in site.data.anchors %}
+  {% include {{ member.anchor }}-{{ site.active_lang }}.html %}
+{% endfor %}

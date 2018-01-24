@@ -1,0 +1,25 @@
+<div id="slider">
+  <div class="slides">
+  {% for slide in page.slides %}
+    <div class="slider">
+      <div class="legend"></div>
+      <div class="content">
+        <div class="content-txt">
+          <h2>{{ slide.sentence[site.active_lang] }}</h2>
+          <h1>{{ slide.game }}</h1>
+          {% if slide.link %}
+            <div class="center">
+              <a href="{{ slide.link }}" class="bttn-dark">{{ slide.captcha[site.active_lang] }}</a>
+            </div>
+          {% else %}
+            <h2>{{ slide.captcha[site.active_lang] }}</h2>
+          {% endif %}
+        </div>
+      </div>
+      <div class="images"> 
+        <img src="{{ slide.image }}"> 
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</div>

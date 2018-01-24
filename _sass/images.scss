@@ -1,0 +1,54 @@
+.game-container {
+  position: relative;
+  width: 100%;
+}
+
+.game-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.game-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('/images/pattern.png');
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.game-container:hover .game-overlay {
+  height: 100%;
+}
+
+.game-text {
+  color: $blue-color-light;
+  font-family: Helvetica, Arial, sans-serif;
+  position: absolute;
+  text-align: center;
+  margin-left:15px;
+  margin-right:15px;
+}
+
+.game-text h1{
+  padding-bottom:10px;
+
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 100%;
+}
+.game-text h2{
+  font-weight: 450;
+  font-size: 2em;
+}
+.game-text h3{
+  font-weight:450;
+  font-size: 1.25em;
+}
