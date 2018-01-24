@@ -40,5 +40,7 @@ slides:
 
 
 {% for member in site.data.anchors %}
-  {% include {{ member.anchor }}-{{ site.active_lang }}.html %}
+  {% if member.anchor %}
+    {% include {{ member.anchor }}-{{ site.active_lang }}.html %}
+  {% endif %}
 {% endfor %}

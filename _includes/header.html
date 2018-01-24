@@ -22,7 +22,11 @@
         </label>
         <div class="trigger">
           {% for member in site.data.anchors %}
-            <a class="page-link" href="#{{ member.anchor }}">{{ member[site.active_lang] }}</a>
+            {% if member.anchor %}
+              <a class="page-link" href="#{{ member.anchor }}">{{ member[site.active_lang] }}</a>
+            {% else %}
+              <a class="page-link" href="{{ member.link }}" target="_blank">{{ member[site.active_lang] }}</a>
+            {% endif %}
           {% endfor %}
           <span class="languages">
             {% for tongue in site.languages %}

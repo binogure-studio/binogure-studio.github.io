@@ -59,7 +59,7 @@ google_analytics: UA-111848065-3
 
 languages: ["en", "fr"]
 default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css", "assets"]
+exclude_from_localization: ["javascript", "images", "css", "assets", "CNAME"]
 parallel_localization: true
 
 # Build settings
