@@ -1,0 +1,9 @@
+- anchor: "about"
+  fr: Qui sommes-nous
+  en: About us
+- anchor: "games"
+  fr: Nos jeux
+  en: Our games
+- link: "https://www.freelists.org/list/binogure-studio"
+  fr: L'infolettre
+  en: Newsletter

@@ -1,1 +1,69 @@
-theme: jekyll-theme-slate
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Binogure Studio
+email: contact@binogure-studio.com
+
+description:
+  # this means to ignore newlines until "fr:"
+  en: >-
+    Binogure Studio is a Montreal based video game studio creating original and fun games.
+  # this means to ignore newlines until "baseurl:"
+  fr: >-
+    Binogure Studio est un studio de Jeux Vidéo basé a Montréal.
+    Nous créons des jeux funs aux contenus originaux.
+
+contactus:
+  en: >-
+    Feel free to contact us.
+    We are always pleased to answer any questions about our organization and our games
+  fr: >-
+    Prenez le temps de nous contacter.
+    Nous serions heureux de pouvoir répondre a vos questions concernant notre studio
+
+# the subpath of your site, e.g. /blog
+baseurl: ""
+
+# the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.binogure-studio.com"
+
+social_sites:
+  twitter: binogure
+  youtube: Binogure studio
+  youtube_uri: UCICwKQU-TUX24Ocm1Axsbeg
+  # github:  jekyll
+  #dribbble: jekyll
+  #facebook: jekyll
+  #flickr: jekyll
+  #instagram: jekyll
+  #linkedin: jekyll
+  #pinterest: jekyll
+#googleplus: +jekyll
+
+# github_username:  xsellier
+show_downloads: false
+show_github: false
+google_analytics: UA-111848065-3
+
+languages: ["en", "fr"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "assets", "CNAME"]
+parallel_localization: true
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-polyglot

@@ -1,0 +1,28 @@
+- name: City Game Studio
+  link: http://store.steampowered.com/app/726840/City_Game_Studio
+  available:
+    en: Summer 2018
+    fr: Été 2018
+  description:
+    en: >-
+      You are the founder of your video game company. The starting point belongs to you, in your garage, or
+      think big instead of small by acquiring your first local. At the end of the day, your decisions will make
+      your studio a success and will mark the Video Game History.
+    fr: >-
+      Vous êtes le président fondateur de votre studio de jeu vidéo. Le point de départ vous appartient, 
+      vous pouvez commencer dans votre garage, ou alors voir grand en acquérant votre premier local.
+  image: "/images/games/citygamestudio.png"
+
+- name: Sneak In
+  available:
+    en: Soon on Google Play Store
+    fr: Bientôt sur le google play store
+  description:
+    en: >-
+      One of the most challenging and addictive game ever.
+      There are several colored balls in a chain who are coming towards the snake.
+      Make groups of three or more balls of the same color and destroy them
+    fr: >-
+      Avoir du fun et se détendre. Aligner 3 balles ou plus pour les faire exploser.
+      Faites des combos pour obtenir plus de points. C'est simple et pourtant très addictif.
+  image: "/images/games/sneakin.png"
