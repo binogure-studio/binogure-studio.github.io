@@ -101,3 +101,10 @@ span.emphasis {
   margin-left: 24px;
   margin-right: 24px;
 }
+
+.footer-foot {
+  width: 100%;
+  text-align: center;
+  color: $grey-color;
+  @include relative-font-size(0.9375);
+}
