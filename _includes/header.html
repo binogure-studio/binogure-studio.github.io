@@ -23,20 +23,20 @@
         <div class="trigger">
           {% for member in site.data.anchors %}
             {% if member.anchor %}
-              <a class="page-link" href="#{{ member.anchor }}">{{ member[site.active_lang] }}</a>
+              <a class="page-link" href="#{{ member.anchor }}">{{ member[page.active_lang] }}</a>
             {% else %}
-              <a class="page-link" href="{{ member.link }}" target="_blank">{{ member[site.active_lang] }}</a>
+              <a class="page-link" href="{{ member.link }}" target="_blank">{{ member[page.active_lang] }}</a>
             {% endif %}
           {% endfor %}
           <span class="languages">
             {% for tongue in site.languages %}
               {% assign class_name = '' %}
 
-              {% if tongue == site.active_lang %}
+              {% if tongue == page.active_lang %}
                 {% assign class_name = 'activated' %}
               {% endif %}
 
-              <a class="page-link {{class_name}}" href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">{{ tongue | upcase }}</a>
+              <a class="page-link {{class_name}}" href="{% if tongue == site.default_lang %} {{site.baseurl}}/index.html {% else %} {{site.baseurl}}/index-{{ tongue }}.html {% endif %}">{{ tongue | upcase }}</a>
             {% endfor %}
           </span>
         </div>

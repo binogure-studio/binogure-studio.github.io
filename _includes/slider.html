@@ -5,14 +5,14 @@
       <div class="legend"></div>
       <div class="content">
         <div class="content-txt">
-          <h2>{{ slide.sentence[site.active_lang] }}</h2>
+          <h2>{{ slide.sentence[page.active_lang] }}</h2>
           <h1>{{ slide.game }}</h1>
           {% if slide.link %}
             <div class="center">
-              <a href="{{ slide.link }}" class="bttn-dark">{{ slide.captcha[site.active_lang] }}</a>
+              <a href="{{ slide.link }}" class="bttn-dark">{{ slide.captcha[page.active_lang] }}</a>
             </div>
           {% else %}
-            <h2>{{ slide.captcha[site.active_lang] }}</h2>
+            <h2>{{ slide.captcha[page.active_lang] }}</h2>
           {% endif %}
         </div>
       </div>

@@ -9,7 +9,7 @@
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li class="p-name">
-            {{ site.contactus[site.active_lang] }}
+            {{ site.contactus[page.active_lang] }}
           </li>
           {% if site.email %}
             <li>
@@ -24,7 +24,7 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{ site.description[site.active_lang] }}</p>
+        <p>{{ site.description[page.active_lang] }}</p>
       </div>
     </div>
 

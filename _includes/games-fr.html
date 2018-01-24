@@ -22,8 +22,8 @@
           <div class="game-overlay">
               <div class="game-text">
                 <h1>{{ game.name }}</h1>
-                <h3>{{ game.description[site.active_lang] }}</h3>
-                <h2>{{ game.available[site.active_lang] }}</h2>
+                <h3>{{ game.description[page.active_lang] }}</h3>
+                <h2>{{ game.available[page.active_lang] }}</h2>
               </div>
           </div>
           {% if game.link %}
