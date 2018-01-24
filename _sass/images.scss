@@ -43,12 +43,31 @@
   font-weight: 700;
   font-size: 2.5em;
   line-height: 100%;
+
+  @include media-query($on-laptop) {
+    font-weight: 350;
+    font-size: 1.5em;
+  }
 }
 .game-text h2{
   font-weight: 450;
   font-size: 2em;
+
+  @include media-query($on-laptop) {
+    font-weight: 225;
+    font-size: 1.25em;
+  }
 }
 .game-text h3{
   font-weight:450;
   font-size: 1.25em;
+
+  @include media-query($on-laptop) {
+    font-weight: 225;
+    font-size: 1.0em;
+  }
+
+  @include media-query($on-laptop) {
+    display: none;
+  }
 }

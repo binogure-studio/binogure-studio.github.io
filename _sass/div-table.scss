@@ -62,12 +62,27 @@ span.emphasis {
 }
 
 .height-96 {
-  height: 96px;
+  max-width: 96px;
+  height: auto;
 }
 
 .height-128 {
-  height: 128px;
-  width:128px;
+  max-width: 128px;
+  height: auto;
+}
+
+@include media-query($on-laptop) {
+  .height-128 {
+    max-width: 96px;
+    height: auto;
+  }
+}
+
+@include media-query($on-palm) {
+  .height-128 {
+    max-width: 48px;
+    height: auto;
+  }
 }
 
 .logo-first {

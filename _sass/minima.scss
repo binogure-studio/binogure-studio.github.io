@@ -42,8 +42,9 @@ $brand-color:      #2a7ae2 !default;
 // Width of the content area
 $content-width:    1600px !default;
 
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
+$on-phone:         450px !default;
+$on-palm:          800px !default;
+$on-laptop:        1024px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {

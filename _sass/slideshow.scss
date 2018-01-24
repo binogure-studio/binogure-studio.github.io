@@ -65,6 +65,7 @@
   -moz-animation :content-s 7.5s infinite;
   animation: content-s 7.5s infinite;
 }
+
 .content-txt h1{
   color: $blue-color-light;
   text-align:center;
@@ -75,6 +76,11 @@
   font-weight: 700;
   font-size: 5em;
   line-height: 100%;
+
+  @include media-query($on-laptop) {
+    font-weight: 350;
+    font-size: 2.5em;
+  }
 }
 .content-txt h2{
   font-family: Helvetica, Arial, sans-serif;
@@ -83,6 +89,15 @@
   color: $blue-color-light;
   text-align:center;
   margin-left:30px;
+
+  @include media-query($on-laptop) {
+    font-weight: 150;
+    font-size: 1.5em;
+  }
+
+  @include media-query($on-phone) {
+    display: none;
+  }
 }
 
 /* Switch */
