@@ -32,7 +32,7 @@ $green-color-light: lighten($green-color, 40%) !default;
 $green-color-dark:  darken($green-color, 25%) !default;
 
 $red-color: #b15252;
-$red-color-light: lighten($red-color, 40%) !default;
+$red-color-light: lighten($red-color, 25%) !default;
 $red-color-dark:  darken($red-color, 25%) !default;
 
 $text-color:       $darkblue-color-dark !default;
@@ -71,7 +71,8 @@ $on-laptop:        1024px !default;
   "slideshow",
   "button",
   "div-table",
-  "images"
+  "images",
+  "form"
 ;
 
 .activated {
