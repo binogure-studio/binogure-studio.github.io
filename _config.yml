@@ -45,6 +45,8 @@ baseurl: ""
 # the base hostname & protocol for your site, e.g. http://example.com
 url: "http://www.binogure-studio.com"
 
+support: "https://support.binogure-studio.com"
+
 social_sites:
   twitter: binogure
   youtube: Binogure studio
