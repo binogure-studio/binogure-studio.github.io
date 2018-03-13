@@ -45,7 +45,12 @@ baseurl: ""
 # the base hostname & protocol for your site, e.g. http://example.com
 url: "http://www.binogure-studio.com"
 
-support: "https://support.binogure-studio.com"
+support: 
+  url: https://support.binogure-studio.com
+  en: >-
+    Contact support
+  fr: >-
+    Contacter le support
 
 social_sites:
   twitter: binogure
@@ -53,12 +58,11 @@ social_sites:
   youtube_uri: UCICwKQU-TUX24Ocm1Axsbeg
   # github:  jekyll
   #dribbble: jekyll
-  #facebook: jekyll
+  facebook: Binogure
   #flickr: jekyll
   #instagram: jekyll
   #linkedin: jekyll
   #pinterest: jekyll
-#googleplus: +jekyll
 
 # github_username:  xsellier
 show_downloads: false
