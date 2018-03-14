@@ -13,6 +13,7 @@
   image: "/images/games/citygamestudio.png"
 
 - name: Sneak In
+  link: /sneak-in-website/
   available:
     en: Soon on Google Play Store
     fr: Bientôt sur le google play store
