@@ -4,7 +4,7 @@
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <a class="site-title" href="{{ site.baseurl }}/{{ site.index[page.lang] }}">
-      <img src="/images/binogure-studio-logo.png" />
+      <img src="/images/binogure-studio-logo.png" alt="Binogure Studio logo" />
       {{ site.title }}
     </a>
   
@@ -25,7 +25,7 @@
             {% if member.anchor %}
               <a class="page-link" href="#{{ member.anchor }}">{{ member[page.active_lang] }}</a>
             {% else %}
-              <a class="page-link" href="{{ member.link }}" target="_blank">{{ member[page.active_lang] }}</a>
+              <a class="page-link" href="{{ member.link }}" target="_blank" rel="noreferrer">{{ member[page.active_lang] }}</a>
             {% endif %}
           {% endfor %}
           <span class="languages">
