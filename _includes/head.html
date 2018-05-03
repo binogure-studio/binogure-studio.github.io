@@ -5,6 +5,9 @@
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
+  <link rel="alternate" hreflang="fr" href="{{ site.url }}/index-fr.html"/>
+  <link rel="alternate" hreflang="en" href="{{ site.url }}/index.html"/>
+
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
