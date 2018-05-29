@@ -23,7 +23,16 @@
         <div class="trigger">
           {% for member in site.data.anchors %}
             {% if member.anchor %}
-              <a class="page-link" href="#{{ member.anchor }}">{{ member[page.active_lang] }}</a>
+              {% if page.ref == "index" %}
+                <a class="page-link" href="#{{ member.anchor }}">{{ member[page.active_lang] }}</a>
+              {% else %}
+                {% assign destination = "" %}
+                {% if page.active_lang != "en" %}
+                  {% assign destination = "-" | append: page.active_lang %}
+                {% endif %}
+
+                <a class="page-link" href="/index{{ destination }}.html#{{ member.anchor }}">{{ member[page.active_lang] }}</a>
+              {% endif %}
             {% else %}
               <a class="page-link" href="{{ member.link }}" target="_blank" rel="noreferrer">{{ member[page.active_lang] }}</a>
             {% endif %}
