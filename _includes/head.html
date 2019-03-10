@@ -2,11 +2,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ site.description[page.active_lang] | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="city game studio, city builder, game dev tycoon, tycoon, builder, game, strategy, simulation">
+
+  <!--  Essential META Tags -->
+  <meta name="twitter:site" content="@binogure" />
+  <meta property="og:title" content="Binogure Studio - Create brilliants games">
+  <meta property="og:description" content="Binogure Studio - Create brilliants games">
+  <meta property="og:image" content="https://www.binogure-studio.com/images/binogure-studio-logo.png">
+  <meta property="og:url" content="https://www.binogure-studio.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!--  Non-Essential, But Recommended -->
+  <meta name="twitter:image:alt" content="Binogure Studio - Create brilliants games">
+  <meta property="og:site_name" content="Binogure Studio - Create brilliants games">
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
   <link rel="alternate" hreflang="fr" href="{{ site.url }}/index-fr.html"/>
   <link rel="alternate" hreflang="en" href="{{ site.url }}/index.html"/>
+  
 
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
