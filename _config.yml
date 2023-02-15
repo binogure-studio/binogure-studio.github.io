@@ -27,9 +27,9 @@ description:
 
 trademark:
   en: >-
-    © 2021 Binogure Studio - All Rights Reserved
+    © 2023 Binogure Studio - All Rights Reserved
   fr: >-
-    © 2021 Binogure Studio - Tous droits réservés
+    © 2023 Binogure Studio - Tous droits réservés
 
 contactus:
   en: >-
@@ -46,7 +46,7 @@ baseurl: ""
 url: "http://www.binogure-studio.com"
 
 support: 
-  url: https://support.binogure-studio.com
+  url: https://discord.gg/citygamestudio
   en: >-
     Contact support
   fr: >-
@@ -65,7 +65,7 @@ social_sites:
   github:  binogure-studio
   steam: binogure
   #dribbble: jekyll
-  facebook: Binogure
+  # facebook: Binogure
   #flickr: jekyll
   #instagram: jekyll
   #linkedin: jekyll
