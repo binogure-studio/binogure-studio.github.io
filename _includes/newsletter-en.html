@@ -8,12 +8,20 @@
       <div class="newsletter-description">
         <p>If you're interested in testing it out, then sign up below to get exclusive access.</p>
       </div>
-      <div class="newsletter-input">
-        <input type="text" class="newsletter-button newsletter-email newsletter-input" id="newsletter-email" name="email" placeholder="NAME@EXAMPLE.COM" oninput="javascript: emailAddressHandler()" />
-        <input type="button" class="newsletter-button newsletter-submit" id="newsletter-submit" value="SIGN UP" onclick="javascript: subscrireToNewsletter()" disabled />
-      </div>
+      <form id="newsletter-form" target="_blank" method="post">
+        <div class="newsletter-input">
+          <input type="hidden" name="ListID" value="7992">
+          <select name="action" style="display: none;">
+            <option value="subscribe">S'abonner</option>
+            <option value="unsubscribe">Se désabonner</option>
+          </select>
+          <input type="text" class="newsletter-button newsletter-email newsletter-input" id="newsletter-email" name="email" placeholder="NAME@EXAMPLE.COM" oninput="javascript: emailAddressHandler()" />
+          <input type="button" class="newsletter-button newsletter-submit" id="newsletter-submit" value="SIGN UP" onclick="javascript: subscrireToNewsletter()" disabled />
+        </div>
+      </form>
+
       <div class='newsletter-description newsletter-confirm' id='subscribed'>
-        <p>Check your email to confirm your subscription.</p>
+        <p>Subscription confirmed, thank you.</p>
       </div>
     </div>
   </center>

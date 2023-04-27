@@ -20,14 +20,16 @@ function subscrireToNewsletter() {
   emailAddressHandler()
 
   var emailInput = document.getElementById('newsletter-email')
+  var newsletter_form = document.getElementById('newsletter-form')
 
   // If the email address is valid
   if (validateEmail(emailInput.value)) {
     var xhttp = new XMLHttpRequest()
 
     xhttp.onreadystatechange = ajaxHandler
-    xhttp.open('POST', 'https://www.freelists.org/cgi-bin/subscription.cgi', true)
-    xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
-    xhttp.send('action=subscribe&list=binogure-studio&email=' + encodeURI(emailInput.value))
+    xhttp.open('POST', 'http://www.mailinglist.fr/mlbox/form', true)
+    xhttp.setRequestHeader('Access-Control-Request-Headers', 'X-PINGOTHER, Content-Type')
+    xhttp.setRequestHeader('Access-Control-Request-Method', 'POST')
+    xhttp.send(new FormData(newsletter_form))
   }
 }

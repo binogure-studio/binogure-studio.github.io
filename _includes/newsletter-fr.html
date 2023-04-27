@@ -8,13 +8,20 @@
       <div class="newsletter-description">
         <p>Si vous souhaitez pouvoir tester nos jeux en avant-première, inscrivez-vous à notre infolettre.</p>
       </div>
-      <div class="newsletter-input">
-        <input type="text" class="newsletter-button newsletter-email newsletter-input" id="newsletter-email" name="email" placeholder="NOM@EXEMPLE.COM" oninput="javascript: emailAddressHandler()" />
-        <input type="button" class="newsletter-button newsletter-submit" id="newsletter-submit" value="VALIDER" onclick="javascript: subscrireToNewsletter()" disabled />
-      </div>
+      <form id="newsletter-form" target="_blank" method="post">
+        <div class="newsletter-input">
+          <input type="hidden" name="ListID" value="7992">
+          <select name="action" style="display: none;">
+            <option value="subscribe">S'abonner</option>
+            <option value="unsubscribe">Se désabonner</option>
+          </select>
+          <input type="text" class="newsletter-button newsletter-email newsletter-input" id="newsletter-email" name="email" placeholder="NOM@EXEMPLE.COM" oninput="javascript: emailAddressHandler()" />
+          <input type="button" class="newsletter-button newsletter-submit" id="newsletter-submit" value="VALIDER" onclick="javascript: subscrireToNewsletter()" disabled />
+        </div>
+      </form>
 
       <div class='newsletter-description newsletter-confirm' id='subscribed'>
-        <p>Vérifiez votre boîte courriel pour confirmer votre inscription à notre infolettre.</p>
+        <p>Merci pour votre inscription à notre infolettre.</p>
       </div>
     </div>
   </center>
