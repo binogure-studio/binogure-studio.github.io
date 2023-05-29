@@ -1,3 +1,8 @@
+---
+layout: default
+ref: unsubscribe
+active_lang: en
+---
 <div class="content-col-wrapper">
   <center>
     <div id="newsletter" class="anchor-menu"></div>
@@ -6,22 +11,22 @@
         <p>Newsletter</p>
       </div>
       <div class="newsletter-description">
-        <p>If you're interested in testing it out, then sign up below to get exclusive access.</p>
+        <p>To unscubscribe to our newsletter, we promise we don't send emails too often.</p>
       </div>
       <form id="newsletter-form" target="_blank" method="post">
         <div class="newsletter-input">
           <input type="hidden" name="ListID" value="7992">
           <select name="action" style="display: none;">
-            <option value="subscribe">S'abonner</option>
             <option value="unsubscribe">Se désabonner</option>
+            <option value="subscribe">S'abonner</option>
           </select>
           <input type="text" class="newsletter-button newsletter-email newsletter-input" id="newsletter-email" name="email" placeholder="NAME@EXAMPLE.COM" oninput="javascript: emailAddressHandler()" />
-          <input type="button" class="newsletter-button newsletter-submit" id="newsletter-submit" value="SIGN UP" onclick="javascript: subscrireToNewsletter()" disabled />
+          <input type="button" class="newsletter-button newsletter-submit" id="newsletter-submit" value="UNSUBSCRIBE" onclick="javascript: subscrireToNewsletter()" disabled />
         </div>
       </form>
 
       <div class='newsletter-description newsletter-confirm' id='subscribed'>
-        <p>Subscription confirmed, thank you.</p>
+        <p>Unsubscription confirmed, thank you.</p>
       </div>
     </div>
   </center>
