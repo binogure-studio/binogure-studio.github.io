@@ -1,3 +1,19 @@
+- name: Fortune Avenue
+  link: http://www.fortune-avenue.com/
+  available:
+    en: Get it now on Steam
+    fr: Achète le sur Steam
+  description:
+    en: >-
+      Fortune Avenue is an exciting multiplayer board game.
+      Buy properties, build hotels and build monopolies across continents.
+      Or ruin your opponents! 🎲 🏨 
+    fr: >-
+      Fortune Avenue est un jeu de plateau multijoueur captivant.
+      Achetez des propriétés, construisez des hôtels et faites des monopoles au travers des continents.
+      Ou alors ruinez vos adversaires! 🎲 🏨
+  image: "/images/games/fortuneavenue.png"
+
 - name: City Game Studio
   link: http://www.city-game-studio.com/
   available:
