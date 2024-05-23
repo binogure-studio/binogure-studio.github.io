@@ -7,7 +7,7 @@
     <table>
     {% assign counter = 0 %}
     {% for game in site.data.games %}
-      {% assign is_new_line = counter | mod: 3 %}
+      {% assign is_new_line = counter | mod: 2 %}
 
       {% if forloop.first == true %}
         <tr>
