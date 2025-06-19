@@ -67,8 +67,12 @@
         <div class="newsletter-description">Si vous souhaitez tester des jeux exclusifs, inscrivez-vous ci-dessous pour bénéficier d'un accès exclusif.</div>
         <form method="post" action="https://app.keila.io/forms/nfrm_wWVnpp3N" class="contact-form">
             <label for="contact_email" style="display: none">Email: </label><input type="email" id="contact_email" placeholder="Email" name="contact[email]" required />
-            <!-- no botz please -->
-            </script>
+            <div class="flex flex-col">
+                <div class="h-captcha" data-sitekey="a1c5fab7-71df-4ea4-af75-87a3d07c61de">
+                </div>
+                <script async="" defer="" src="https://hcaptcha.com/1/api.js">
+                </script>
+            </div>
             <input aria-hidden="true" autocomplete="off" name="h[url]" novalidate="novalidate" style="display: none"/>
             <button type="submit">S'inscrire</button>
         </form>
